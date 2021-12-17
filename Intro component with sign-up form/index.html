@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="left-side">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right-side">
+        <h2 class="price"><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+        <form class="form-box" id="form">
+          <div class="form-control">
+            <input type="text" name="firstName" id="firstname" placeholder="First Name" />
+            <img src="./images/icon-error.svg">
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="text" name="lastName" id="lastname" placeholder="Last Name" />
+            <img src="./images/icon-error.svg">
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Email Address" />
+            <img src="./images/icon-error.svg">
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <img src="./images/icon-error.svg">
+            <small></small>
+          </div>
+          <button type="submit">Claim your free trial</button>
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://www.frontendmentor.io/profile/RodoM">Rodolfo Meroi</a>.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
