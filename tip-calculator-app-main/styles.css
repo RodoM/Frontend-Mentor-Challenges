@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --strongCyan: hsl(172, 67%, 45%);
+    --darkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan1: hsl(186, 14%, 43%);
+    --darkGrayishCyan2: hsl(184, 14%, 56%);
+    --lightGrayishCyan1: hsl(185, 41%, 84%);
+    --lightGrayishCyan2: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --red: hsl(0, 100%, 74%);
+}
+
+*,
+*::after,
+*::before {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lightGrayishCyan1);
+    font-size: 24px;
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-box {
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 25px 25px;
+}
+
+.title {
+    text-align: center;
+    color: var(--darkGrayishCyan1);
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-control label {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--darkGrayishCyan1);
+}
+
+.form-control input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--lightGrayishCyan2);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: var(--darkCyan);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.form-control input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-control input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-control img {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    height: 20px;
+}
+
+.form-control input::placeholder {
+    color: var(--darkGrayishCyan1);
+}
+
+.form-control .tip-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.form-control .tips {
+    background-color: var(--darkCyan);
+    border: none;
+    color: var(--white);
+    height: 52px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-control .tip-active {
+    color: var(--darkCyan);
+    background-color: var(--strongCyan);
+}
+
+.form-control .tip-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+}
+
+.form-control span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control small {
+    font-size: 18px;
+    opacity: 0;
+}
+
+.form-control .error-msg {
+    color: var(--red);
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.left-side {
+    background-color: var(--darkCyan);
+    padding: 39px 21px;
+    border-radius: 12px;
+}
+
+.left-side .tip-person, .total-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side .amount {
+    font-size: 35px;
+    color: var(--strongCyan);
+    font-weight: 700;
+}
+
+.left-side label {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.left-side p {
+    color: var(--lightGrayishCyan1);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.left-side button {
+    background-color: var(--strongCyan);
+    width: 100%;
+    border: none;
+    color: var(--darkCyan);
+    font-weight: 700;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-side button:active {
+    background-color: var(--lightGrayishCyan1);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1240px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculator-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin: auto;
+        max-width: 50%;
+    }
+    .right-side {
+        grid-column: 1;
+    }
+    .left-side {
+        grid-column: 2;
+        
+    }
+    .form-control .tip-buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .left-side button {
+        margin-top: 130px;
+    }
+    .attribution {
+        margin-top: 100px;
+    }
+}

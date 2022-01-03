@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --limeGreen: hsl(163, 72%, 41%);
+    --brightRed: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: hsl(329, 70%, 58%);
+    --youTube: hsl(348, 97%, 39%);
+
+    /* Dark Theme */
+    --toggleDark: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+    --veryDarkBlue: hsl(230, 17%, 14%);
+    --veryDarkBlue: hsl(232, 19%, 15%);
+    --darkDesaturatedBlue: hsl(228, 28%, 20%);
+    --darkDesaturatedBlue2: hsl(228, 25%, 25%);
+    --desaturatedBlue: hsl(228, 34%, 66%);
+
+    /* Light Theme */
+    --toggleLight: hsl(230, 22%, 74%);
+
+    --white: hsl(0, 0%, 100%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --lightGrayishBlue: hsl(227, 47%, 96%);
+    --lightGrayishBlue2: hsl(227, 50%, 90%);
+    --darkGrayishBlue: hsl(228, 12%, 44%);
+}
+
+*,
+*::after,
+*::before {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 45px 20px 45px 20px;
+    background-color: var(--veryDarkBlue);
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.top-title {
+    font-size: 24px;
+    color: var(--white);
+    transition: 0.6s;
+}
+
+p {
+    color: var(--desaturatedBlue);
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+hr {
+    border: 1px solid var(--desaturatedBlue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.6s;
+}
+
+label {
+    color: var(--desaturatedBlue);
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+.theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background: var(--toggleDark);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: var(--veryDarkBlue);
+    border-radius: 50%;
+    transform: scale(0.8);
+    transition: 0.6s;
+}
+
+.toggle.active {
+    background: var(--toggleLight);
+}
+
+.toggle.active .indicator {
+    left: 25px;
+    background-color: var(--white);
+}
+
+.top-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 7px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    transition: 0.6s;
+}
+
+.box:hover {
+    background-color: var(--darkDesaturatedBlue2);
+}
+
+.box .logo-and-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box .name {
+    color: var(--desaturatedBlue);
+    font-size: 12px;
+    margin-left: 15px;
+    transition: 0.6s;
+}
+
+.box .number {
+    color: var(--white);
+    font-size: 55px;
+    transition: 0.6s;
+}
+
+.box p {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 30px;
+    transition: 0.6s;
+}
+
+.box .today-followers {
+    display: flex;
+    align-items: center;
+}
+
+.box .small-box, .arrow {
+    height: 4px;
+    width: 8px;
+}
+
+.box .today-number {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: 0.6s;
+}
+
+.box .up {
+    color: var(--limeGreen);
+}
+
+.box .down {
+    color: var(--brightRed);
+}
+
+.fb {
+    border-top: 7px solid var(--facebook);
+}
+
+.tw {
+    border-top: 7px solid var(--twitter);
+}
+
+.ig {
+    border-top: 7px solid var(--instagram);   
+}
+
+.yt {
+    border-top: 7px solid var(--youTube);
+}
+
+.bottom-title {
+    font-size: 24px;
+    color: var(--white);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: 0.6s;
+}
+
+.small-box {
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 7px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.6s;
+}
+
+.small-box:hover {
+    background-color: var(--darkDesaturatedBlue2);
+}
+
+.small-box .top, .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-box .top {
+    margin-bottom: 20px;
+}
+
+.small-box .percentage {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.small-box h2 {
+    color: var(--desaturatedBlue);
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+.small-box .number {
+    color: var(--white);
+    font-size: 35px;
+    transition: 0.6s;
+}
+
+.small-box .percentage-up {
+    color: var(--limeGreen);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.small-box .percentage-down {
+    color: var(--brightRed);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Light Theme */
+body.active {
+    background-color: var(--white);
+}
+
+.top-title.active,
+.bottom-title.active,
+.box .number.active,
+.bottom-side .number.active {
+    color: var(--veryDarkBlue);
+}
+
+p.active,
+label.active,
+.box .name.active,
+.bottom-side h2.active {
+    color: var(--darkGrayishBlue);
+}
+
+hr.active {
+    border: 1px solid var(--veryDarkBlue);
+}
+
+.box.active, .small-box.active {
+    background-color: var(--lightGrayishBlue);
+}
+
+.box.active:hover, .small-box.active:hover {
+    background-color: var(--lightGrayishBlue2);
+}
+
+@media (min-width: 1240px) {
+    body {
+        margin: 60px 250px 0 250px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .theme {
+        justify-content: right;
+        gap: 10px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    hr {
+        opacity: 0;
+    }
+    .top-side {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+        margin-bottom: 25px;
+    }
+    .bottom-side {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 35px;
+        row-gap: 15px;
+        margin-top: 15px;
+    }
+}

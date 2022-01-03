@@ -132,11 +132,6 @@ body {
     outline-width: 1px;
 }
 
-/* .form-box input:invalid {
-    outline-color: var(--red);
-    outline-width: 1px;
-} */
-
 .form-box input::after {
     background: url(./images/icon-error.svg);
     background-size: 20px;

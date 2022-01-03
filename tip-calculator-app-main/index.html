@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="conteiner">
+    <h1 class="title">SPLI<br>TTER</h1>
+    <div class="calculator-box">
+      <div class="right-side">
+        <form>
+          <div class="form-control">
+            <label>Bill</label>
+            <input type="number" placeholder="0" id="bill">
+            <img src="./images/icon-dollar.svg">
+          </div>
+          <div class="form-control">
+            <label>Select Tip %</label><br>
+            <div class="tip-buttons">
+              <div class="tips" id="tip-5">5%</div>
+              <div class="tips" id="tip-10">10%</div>
+              <div class="tips tip-active" id="tip-15">15%</div>
+              <div class="tips" id="tip-25">25%</div>
+              <div class="tips" id="tip-50">50%</div>
+              <div><input type="number" placeholder="Custom" class="tip-input" id="tip-custom"></div>
+            </div>
+          </div>
+          <div class="form-control">
+            <span>
+              <label>Number of People</label>
+              <small>Can't be zero</small>
+            </span>
+            <input type="number" placeholder="0" id="people">
+            <img src="./images/icon-person.svg">
+          </div>
+        </form>
+      </div>
+      <div class="left-side">
+        <div class="tip-person">
+          <label>Tip Amount</label>
+          <div class="amount">$0.00</div>
+        </div>
+        <p>/ person</p>
+        <div class="total-person">
+          <label>Total</label>
+          <div class="amount">$0.00</div>
+        </div>
+        <p>/ person</p>
+        <button type="reset" class="reset">RESET</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rodolfo Meroi</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
