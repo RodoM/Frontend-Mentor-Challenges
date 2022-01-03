@@ -8,13 +8,10 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
+## Overview
 
 ### The challenge
 
@@ -26,17 +23,21 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the tip calculator app challenge](./desing/Desktop-design-empty.jpeg)
-![Design preview filled](./desing/Desktop-design-completed.jpeg)
-![Mobile Design preview](./desing/Mobile-design.jpeg)
+![Design preview for the tip calculator app challenge](./design/Desktop-design-empty.jpeg)
+![Design preview filled](./design/Desktop-design-completed.jpeg)
+![Mobile Design preview](./design/Mobile-design.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Here](https://rodom-tip-calculator.netlify.app/)
+
+### Built with
+
+- HTML5
+- CSS
+- JS
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@RodoM](https://www.frontendmentor.io/profile/RodoM)
+- LinkedIN - [@Rodolfo Meroi](https://www.linkedin.com/in/rodolfo-meroi-858a13227/)
