@@ -30,10 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://rodom-social-media-dashboard.netlify.app/)
-
-## My process
+- Live Site URL: [Here](https://rodom-social-media-dashboard.netlify.app/)
 
 ### Built with
 
@@ -43,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/RodoM)
-- LinkedIN - [@yourusername](https://www.linkedin.com/in/rodolfo-meroi-858a13227/)
+- Frontend Mentor - [@RodoM](https://www.frontendmentor.io/profile/RodoM)
+- LinkedIN - [@Rodolfo Meroi](https://www.linkedin.com/in/rodolfo-meroi-858a13227/)
