@@ -167,6 +167,15 @@ body {
     color: var(--red);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 footer {
     margin-top: 100px;
 }
