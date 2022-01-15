@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --VeryDarkGray: hsl(0, 0%, 17%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  background-image: url(./images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.top-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 140px 0 15px 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  height: 40px;
+  max-width: 500px;
+  top: 5%;
+}
+
+.input-container input {
+  height: 100%;
+  flex-grow: 8;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.input-container button {
+  height: 100%;
+  flex-grow: 5;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--VeryDarkGray);
+}
+
+.input-container button:hover {
+  cursor: pointer;
+  background-color: var(--DarkGray);
+}
+
+.ip-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  gap: 15px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 60px;
+  top: 30px;
+  margin: auto;
+}
+
+.ip-adress,
+.ip-location,
+.ip-timezone,
+.ip-isp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--DarkGray);
+}
+
+.adress,
+.location,
+.timezone,
+.isp {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--VeryDarkGray);
+}
+
+.map-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 61%;
+  z-index: 999;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1240px) {
+  .background {
+    width: 100%;
+  }
+  .top-side {
+    margin: 50px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .input-container button {
+    flex-grow: 2;
+  }
+
+  .ip-info {
+    gap: 70px;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 75%;
+    padding: 40px 30px;
+    margin: auto;
+    top: 50px;
+  }
+
+  .ip-adress,
+  .ip-location,
+  .ip-timezone,
+  .ip-isp {
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  hr {
+    border: none;
+    border-left: 1px solid var(--DarkGray);
+    height: 85px;
+    width: 1px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .adress,
+  .location,
+  .timezone,
+  .isp {
+    font-size: 26px;
+  }
+
+  .attribution {
+    left: 0;
+  }
+}
