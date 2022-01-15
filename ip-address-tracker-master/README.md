@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/ip-address-tracker-Fnvsg1jPU)
 - Live Site URL: [Live Site](https://rodom-ip-address-tracker.netlify.app/)
 
 ## My process
